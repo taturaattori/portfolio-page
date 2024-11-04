@@ -26,7 +26,7 @@ module.exports = {
       colors: {
         primary: "#eee200",
         accent: {
-          DEFAULT: "#18181c",
+          DEFAULT: "#4298f5",
         },
       },
       borderRadius: {
