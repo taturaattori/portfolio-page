@@ -4,6 +4,7 @@ import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { AlignRight } from "lucide-react";
+import SocialLinks from "./SocialLinks";
 
 const links = [
   {
@@ -46,6 +47,12 @@ const MobileNav = () => {
             );
           })}
         </nav>
+        <div className="mt-10 flex items-center justify-center">
+          <SocialLinks
+            containerStyle="flex gap-6"
+            iconStyle="w-10 h-10 border border-accent rounded-full flex justify-center items-center text-accent hover:bg-accent hover:text-primary"
+          />
+        </div>
       </SheetContent>
     </Sheet>
   );

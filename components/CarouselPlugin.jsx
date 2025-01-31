@@ -1,8 +1,7 @@
 "use client";
-
+import ProjectCard from "@/components/ProjectCard";
 import { React, useRef } from "react";
 import Autoplay from "embla-carousel-autoplay";
-import { Card, CardContent } from "@/components/ui/card";
 import {
   Carousel,
   CarouselContent,
@@ -11,26 +10,21 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 
-const CarouselPlugin = () => {
-  const plugin = useRef(Autoplay({ delay: 3000, stopOnInteraction: true }));
+const CarouselPlugin = ({ projects }) => {
+  const plugin = useRef(Autoplay({ delay: 3500, pauseOnHover: true }));
 
   return (
-    <Carousel
-      plugins={[plugin.current]}
-      className="w-full max-w-xl"
-      onMouseEnter={plugin.current.stop}
-    >
+    <Carousel plugins={[plugin.current]} onMouseEnter={plugin.current.stop}>
       <CarouselContent>
-        {Array.from({ length: 5 }).map((_, index) => (
+        {projects.map((project, index) => (
           <CarouselItem key={index}>
             <div className="p-1">
-              <Card>
-                <CardContent className="flex aspect-square items-center justify-center p-6">
-                  <span className="text-4xl font-semibold">
-                    Project {index + 1}
-                  </span>
-                </CardContent>
-              </Card>
+              <ProjectCard
+                title={project.title}
+                description={project.description}
+                image={project.image}
+                link={project.link}
+              />
             </div>
           </CarouselItem>
         ))}

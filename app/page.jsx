@@ -1,11 +1,12 @@
+import Picture from "@/components/Picture";
 import SocialLinks from "@/components/SocialLinks";
 import React from "react";
 
 export default function Home() {
   return (
     <section className="h-full">
-      <div className="conatiner mx-auto">
-        <div className="flex flex-col xl:flex-row items-center justify-between xl:p-16">
+      <div className="conatiner mx-auto h-full">
+        <div className="flex flex-col xl:flex-row items-center justify-between mt-10 xl:pb-20 xl:pt-12 xl:mr-14 xl:ml-14 xl:mt-0">
           <div className="text-center xl:text-left">
             <span className="text-xl">Software Engineering student</span>
             <br />
@@ -24,7 +25,9 @@ export default function Home() {
               />
             </div>
           </div>
-          <div>img</div>
+          <div>
+            <Picture />
+          </div>
         </div>
       </div>
     </section>
