@@ -18,10 +18,11 @@ const CarouselPlugin = ({ projects }) => {
       <CarouselContent>
         {projects.map((project, index) => (
           <CarouselItem key={index}>
-            <div className="p-1">
+            <div className="p-1 flex justify-center">
               <ProjectCard
                 title={project.title}
                 description={project.description}
+                techs={project.techs}
                 image={project.image}
                 link={project.link}
               />

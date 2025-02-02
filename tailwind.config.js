@@ -14,6 +14,7 @@ module.exports = {
       padding: "15px",
     },
     screen: {
+      xs: "450px",
       sm: "640px",
       md: "768px",
       lg: "960px",
@@ -25,7 +26,7 @@ module.exports = {
     },
     extend: {
       colors: {
-        primary: "#f7ef4f",
+        primary: "#fcf66f",
         accent: {
           DEFAULT: "#4298f5",
         },
