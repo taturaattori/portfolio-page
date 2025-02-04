@@ -2,7 +2,7 @@
 
 <!--about project-->
 
-Personal portfolio to showcases my skills and some of the projects I have worked on during my studies.
+Personal portfolio to showcase my skills and some of the projects I have worked on during my studies.
 
 <!-- pictures? -->
 
