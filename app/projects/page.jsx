@@ -6,7 +6,7 @@ const projects = [
   {
     title: "NewsHub",
     description:
-      "NewsHub is a news application that allows users to read news articles from various sources. The application is built using React Native, Expo, Firebase, and the News API. It was created as a final project for the Mobile Programming course at Haaga-Helia.",
+      "NewsHub is a news application that allows users to read news articles from various sources. Inspired by news applications that I use often, HS for example. It was created as a final project for the Mobile Programming course at Haaga-Helia.",
     techs: ["React Native", "JavaScript", "Expo", "Firebase", "News API"],
     image: "/assets/newshub.PNG",
     link: "https://github.com/taturaattori/NewsHub",
@@ -14,7 +14,7 @@ const projects = [
   {
     title: "EfiLibrary",
     description:
-      "EfiLibrary is a library management application that helps users manage their book collections. The application is built using React, Node.js, and MongoDB. It was developed as a project for the Web Development course at Haaga-Helia.",
+      "EfiLibrary is a project between the students of Business Information Technology Degree Programme in Haaga-Helia University of Applied Sciences, and Eficode Oy, a Finnish company specializing in enhancing software development, whose products are related to automation and devops consulting, as well as accessibility and user studies.",
     techs: ["React", "Node.js", "TypeScript", "Docker", "MaterialUI"],
     image: "/assets/booklist.PNG",
     link: "https://github.com/LibraryProjectGroup/library-project-frontend",
