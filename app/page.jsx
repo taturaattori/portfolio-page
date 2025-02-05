@@ -14,9 +14,9 @@ export default function Home() {
               Hi! I am <span className="text-accent">Tatu Paukkeri</span>
             </h1>
             <p className="max-w-lg mb-10 text-black/70">
-              Software engineering student with a passion for Fullstack
-              development. Currently pursuing my Master&apos;s degree in
-              Computer Sciences at Tampere University.
+              Software Engineering/Computer Science student with a passion for
+              Fullstack development. Currently pursuing my Master&apos;s degree
+              at Tampere University.
             </p>
             <div className="gap-5 mb-8 xl:mb-0 flex justify-center xl:justify-start">
               <SocialLinks

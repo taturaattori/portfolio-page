@@ -16,7 +16,7 @@ import {
 } from "./ui/form";
 import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
-import { Alert, AlertDescription, AlertTitle } from "./ui/alert";
+import FormAlert from "./FormAlert";
 
 const formSchema = z.object({
   email: z.string().email({
@@ -27,18 +27,9 @@ const formSchema = z.object({
   }),
 });
 
-// TODO: create a seperate alert component and a alert for error messages
-const FormAlert = () => {
-  return (
-    <Alert>
-      <AlertTitle>Success!</AlertTitle>
-      <AlertDescription> Your message was sent successfully.</AlertDescription>
-    </Alert>
-  );
-};
-
 const EmailForm = () => {
   const [showAlert, setShowAlert] = useState(false);
+  const [alertType, setAlertType] = useState("");
 
   const form = useForm({
     resolver: zodResolver(formSchema),
@@ -48,20 +39,37 @@ const EmailForm = () => {
     },
   });
 
-  const onSubmit = (data) => {
-    console.log(data);
-    setShowAlert(true);
-    form.reset();
+  const onSubmit = async (data) => {
+    try {
+      const response = await fetch(process.env.NEXT_PUBLIC_FORM_URL, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
 
-    setTimeout(() => {
-      setShowAlert(false);
-    }, 5000);
+      if (response.ok) {
+        form.reset();
+        setAlertType("success");
+        setShowAlert(true);
+
+        setTimeout(() => {
+          setShowAlert(false);
+          setAlertType("");
+        }, 5000);
+      } else {
+        setAlertType("failure");
+        setShowAlert(true);
+      }
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      setAlertType("failure");
+      setShowAlert(true);
+    }
   };
 
   return (
     <Form {...form}>
       <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
-        {showAlert && <FormAlert />}
         <FormField
           control={form.control}
           name="email"
@@ -71,7 +79,7 @@ const EmailForm = () => {
               <FormControl>
                 <Input {...field} id="email" type="email" />
               </FormControl>
-              <FormMessage {...form.formState.errors} name="email" />
+              <FormMessage />
             </FormItem>
           )}
         />
@@ -84,11 +92,12 @@ const EmailForm = () => {
               <FormControl>
                 <Textarea {...field} id="message" />
               </FormControl>
-              <FormMessage {...form.formState.errors} name="message" />
+              <FormMessage />
             </FormItem>
           )}
         />
         <Button type="submit">Send message</Button>
+        {showAlert && <FormAlert type={alertType} />}
       </form>
     </Form>
   );

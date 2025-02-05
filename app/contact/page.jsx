@@ -11,7 +11,7 @@ const Contact = () => {
             <p className="mb-4 max-w-md">
               I am currently looking for a Internship, Trainee or Junior
               position. If you want to get in touch with me, feel free to send
-              me an email, or checkout my socials below.
+              me a message, or checkout my socials below.
             </p>
             <SocialLinks
               containerStyle="flex flex-row gap-4"
