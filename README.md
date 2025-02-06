@@ -10,15 +10,13 @@ Personal portfolio to showcase my skills and some of the projects I have worked 
 
 - Homepage with short bio
 - Projects showcase carousel
-- Contact page
+- Contact page with messaging feature
 - Responsive design
 - Page transitions
 
 ### Upcoming
 
 - Skills/education section
-- Email possibilty to the contact page
-- Deployment
 
 ## Built with
 
@@ -29,6 +27,9 @@ This project is built using modern web development technologies:
 - [![shadcn/ui][shadcn]][shadcn-url] - A component library for building accessible and customizable UI.
 - [![TailwindCSS][Tailwind]][Tailwind-url] - A CSS framework for rapid UI development.
 
+## Deployment
+
+Deployed to Vercel.
 <!-- icons -->
 
 <!-- MARKDOWN LINKS & IMAGES -->
