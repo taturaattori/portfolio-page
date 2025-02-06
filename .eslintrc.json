@@ -4,11 +4,6 @@
   "rules": {
     "prettier/prettier": "error",
     "react/no-unescaped-entities": "warn",
-    "@typescript-eslint/quotes": [
-      "error",
-      "double",
-      { "avoidEscape": true, "allowTemplateLiterals": true }
-    ],
     "quotes": [
       "error",
       "double",
