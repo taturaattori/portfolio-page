@@ -12,6 +12,14 @@ const projects = [
     link: "https://github.com/taturaattori/NewsHub",
   },
   {
+    title: "Portfolio",
+    description:
+      "A personal portfolio website to showcase my skills and some of the projects I have worked on during my studies. The porfolio features sections about me, my work and my contact information. Still under development with more features to come.",
+    techs: ["React", "Next.js", "JavaScript", "TailwindCSS", "shadcn/ui"],
+    image: "/assets/portfolio.PNG",
+    link: "https://github.com/taturaattori/portfolio-page",
+  },
+  {
     title: "EfiLibrary",
     description:
       "EfiLibrary is a project between the students of Business Information Technology Degree Programme in Haaga-Helia University of Applied Sciences, and Eficode Oy, a Finnish company specializing in enhancing software development, whose products are related to automation and devops consulting, as well as accessibility and user studies.",

@@ -9,7 +9,7 @@ const Contact = () => {
           <div>
             <h1 className="h1 text-accent my-2">Let&apos;s connect</h1>
             <p className="mb-4 max-w-md">
-              I am currently looking for a Internship, Trainee or Junior
+              I am currently looking for an Internship, Trainee or Junior
               position. If you want to get in touch with me, feel free to send
               me a message, or checkout my socials below.
             </p>
