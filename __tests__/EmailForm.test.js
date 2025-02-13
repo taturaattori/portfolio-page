@@ -24,6 +24,37 @@ test("it renders 2 input fields on the screen", () => {
   expect(inputFields).toHaveLength(2);
 });
 
+test("it displays validation messages for required fields", async () => {
+  render(<EmailForm />);
+
+  const button = screen.getByRole("button", { name: /send message/i });
+
+  await user.click(button);
+
+  expect(
+    await screen.findByText(/please enter a valid email address/i)
+  ).toBeInTheDocument();
+  expect(
+    await screen.findByText(/message cannot be empty/i)
+  ).toBeInTheDocument();
+});
+
+test("it displays a validation message for invalid email format", async () => {
+  render(<EmailForm />);
+
+  const emailField = screen.getByRole("textbox", { name: /email/i });
+
+  await user.type(emailField, "not-a-real-email");
+
+  const button = screen.getByRole("button", { name: /send message/i });
+
+  await user.click(button);
+
+  expect(
+    await screen.findByText(/please enter a valid email address/i)
+  ).toBeInTheDocument();
+});
+
 test("it calls the onSubmit with right arguments upon form submission", async () => {
   render(<EmailForm />);
 

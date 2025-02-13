@@ -4,5 +4,6 @@
   "jsxSingleQuote": false,
   "trailingComma": "es5",
   "semi": true,
-  "arrowParens": "always"
+  "arrowParens": "always",
+  "endOfLine": "lf"
 }

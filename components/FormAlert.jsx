@@ -19,6 +19,8 @@ const FormAlert = ({ type }) => {
         </AlertDescription>
       </Alert>
     );
+  } else {
+    <></>;
   }
 };
 

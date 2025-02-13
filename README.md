@@ -30,6 +30,7 @@ This project is built using modern web development technologies:
 ## Deployment
 
 Deployed to Vercel.
+
 <!-- icons -->
 
 <!-- MARKDOWN LINKS & IMAGES -->

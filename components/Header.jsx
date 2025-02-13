@@ -14,7 +14,6 @@ const Header = () => {
         {/*desktop nav*/}
         <div className="hidden xl:flex items-center gap-10">
           <Nav />
-          <Button disabled>Resume</Button>
         </div>
         {/*mobile nav*/}
         <div className="xl:hidden">
