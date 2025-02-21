@@ -27,9 +27,9 @@ This project is built using modern web development technologies:
 - [![shadcn/ui][shadcn]][shadcn-url] - A component library for building accessible and customizable UI.
 - [![TailwindCSS][Tailwind]][Tailwind-url] - A CSS framework for rapid UI development.
 
-## Deployment
+## Workflow
 
-Deployed to Vercel.
+The project uses GitHub Actions [workflow](https://github.com/taturaattori/portfolio-page/blob/main/.github/workflows/main.yml) to ensure working pushes/pull requests to main branch. New commits to main are automatically deployed to Vercel.
 <!-- icons -->
 
 <!-- MARKDOWN LINKS & IMAGES -->

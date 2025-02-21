@@ -37,8 +37,8 @@ const ProjectCard = ({ title, description, techs, image, link }) => {
             src={image}
             alt="project picture"
             className="object-cover rounded"
-            priority
-            fill
+            priority="true"
+            fill="true"
             quality={100}
             sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
           />
