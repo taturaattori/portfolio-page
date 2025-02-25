@@ -33,7 +33,7 @@ const projects = [
       "MuseoÄppi is an application created for the Haaga-Helia Software Project II course, designed to facilitate museum visits and help users discover new museums. The application lists over 150 Finnish museums.",
     techs: ["React Native", "JavaScript", "Expo", "Firebase"],
     image: "/assets/museoapp.png",
-    link: "https://github.com/taturaattori/MuseoApp",
+    link: "https://github.com/Museosovellus/MuseoFrontend",
   },
 ];
 
