@@ -9,7 +9,7 @@ import SocialLinks from "./SocialLinks";
 const links = [
   {
     name: "about",
-    path: "/",
+    path: "/about",
   },
   {
     name: "projects",
@@ -30,7 +30,9 @@ const MobileNav = () => {
       </SheetTrigger>
       <SheetContent className="flex flex-col">
         <div className="mt-20 mb-20 text-center">
-          <h1 className="text-2xl font-bold">Tatu Paukkeri</h1>
+          <Link href="/">
+            <h1 className="text-2xl font-bold">Tatu Paukkeri</h1>
+          </Link>
         </div>
         <nav className="flex flex-col gap-4 mt-4 justify-center items-center">
           {links.map((link, index) => {
