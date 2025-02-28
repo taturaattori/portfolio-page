@@ -12,13 +12,15 @@ import {
 
 const Header = () => {
   return (
-    <header className="py-8 xl:py-12 text-black">
+    <header className="py-8 xl:py-12 text-black/80">
       <div className="container mx-auto flex justify-between items-center">
         <TooltipProvider>
           <Tooltip>
             <TooltipTrigger>
               <Link href="/">
-                <h1 className="text-4xl font-semibold">T.P.</h1>
+                <h1 className="text-4xl font-semibold hover:text-accent">
+                  T.P.
+                </h1>
               </Link>
             </TooltipTrigger>
             <TooltipContent>

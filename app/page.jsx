@@ -13,7 +13,7 @@ export default function Home() {
             <h1 className="h1 mb-6">
               Hi! I am <span className="text-accent">Tatu Paukkeri</span>
             </h1>
-            <p className="max-w-lg mb-10 text-black/70">
+            <p className="max-w-lg mb-10 text-black/80">
               Software Engineering/Computer Science student with a passion for
               Fullstack development. Currently pursuing my Master&apos;s degree
               at Tampere University.
