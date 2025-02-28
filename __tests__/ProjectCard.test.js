@@ -19,9 +19,9 @@ const mockProps = {
 test("it renders the ProjectCard with correct values", async () => {
   render(<ProjectCard {...mockProps} />);
 
-  expect(screen.getByText(mockProps.title)).toBeInTheDocument();
+  await expect(screen.getByText(mockProps.title)).toBeInTheDocument();
 
-  expect(screen.getByText(mockProps.description)).toBeInTheDocument();
+  await expect(screen.getByText(mockProps.description)).toBeInTheDocument();
 
   mockProps.techs.forEach((tech) => {
     expect(screen.getByText(tech)).toBeInTheDocument();

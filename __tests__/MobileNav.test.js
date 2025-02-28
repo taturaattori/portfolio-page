@@ -1,6 +1,6 @@
 import { render, screen } from "@testing-library/react";
 import { usePathname } from "next/navigation";
-import Nav from "@/components/Nav";
+import MobileNav from "@/components/Nav";
 
 jest.mock("next/navigation", () => ({
   usePathname: jest.fn(),
@@ -12,10 +12,10 @@ const mockLinks = [
   { name: "contact", path: "/contact" },
 ];
 
-test("it renders Nav component with correct links", () => {
+test("it renders MobileNav component with correct links", () => {
   usePathname.mockReturnValue("/about");
 
-  render(<Nav />);
+  render(<MobileNav />);
 
   mockLinks.forEach((link) => {
     const linkElement = screen.getByText(link.name);
@@ -27,7 +27,7 @@ test("it renders Nav component with correct links", () => {
 test("it applies the correct class to active link", () => {
   usePathname.mockReturnValue("/contact");
 
-  render(<Nav />);
+  render(<MobileNav />);
 
   const activeLink = screen.getByText("contact");
   expect(activeLink).toHaveClass("text-accent");
