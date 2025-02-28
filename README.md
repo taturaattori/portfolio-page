@@ -31,7 +31,7 @@ The project uses GitHub Actions [workflow](https://github.com/taturaattori/portf
 ## User Interface
  <p float="left">
    <img src="./public/assets/ui.png" width="49%" height="49%" />
-   <img src="./public/assets/ui_mobile.png" height="252" />
+   <img src="./public/assets/ui_mobile.png" height="250" />
  </p>
 
 <!-- MARKDOWN LINKS & IMAGES -->
