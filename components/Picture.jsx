@@ -10,7 +10,7 @@ const Picture = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.5, duration: 0.5, ease: "easeIn" }}
-        className="w-[296px] h-[290px] md:w-[387px] md:h-[380px] xl:w-[490px] xl:h-[480px] relative mix-blend-multiply"
+        className="w-[296px] h-[290px] md:w-[387px] md:h-[380px] xl:w-[490px] xl:h-[480px] relative mix-blend-luminosity"
       >
         <Image
           src="/assets/picture.png"
