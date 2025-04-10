@@ -36,7 +36,7 @@ const ProjectCard = ({ title, description, techs, image, link }) => {
           <Image
             src={image}
             alt="project picture"
-            className="object-cover rounded"
+            className="object-cover rounded mix-blend-luminosity"
             priority="true"
             fill="true"
             quality={100}
