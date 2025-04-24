@@ -29,12 +29,14 @@ This project is built using modern web development technologies:
 The project uses GitHub Actions [workflow](https://github.com/taturaattori/portfolio-page/blob/main/.github/workflows/main.yml) to ensure working pushes/pull requests to main branch. New commits to main are automatically deployed to Vercel.
 
 ## User Interface
+
  <p float="left">
    <img src="./public/assets/ui.png" width="49%" height="49%" />
    <img src="./public/assets/ui_mobile.png" height="250" />
  </p>
 
 <!-- MARKDOWN LINKS & IMAGES -->
+
 [React]: https://img.shields.io/badge/React-%2320232a.svg?logo=react&logoColor=%2361DAFB
 [React-url]: https://react.dev/
 [Next]: https://img.shields.io/badge/Next.js-black?logo=next.js&logoColor=white

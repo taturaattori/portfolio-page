@@ -37,17 +37,59 @@ const projects = [
   },
 ];
 
+const fadeInUp = {
+  initial: { y: 20, opacity: 0 },
+  animate: { y: 0, opacity: 1 },
+  transition: { duration: 0.5, ease: "easeOut" },
+};
+
 const Projects = () => {
   return (
     <motion.section
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      transition={{ delay: 0.5, duration: 0.5, ease: "easeIn" }}
-      className="flex-shrink-0 items-center justify-center min-h-[70vh] xl:px-0"
+      transition={{ duration: 0.6, ease: "easeIn" }}
+      className="flex flex-col items-center justify-center py-2 md:py-6 min-h-[70vh] w-full"
     >
-      <div className="container mx-auto xl:max-w-[1000px]">
-        <CarouselPlugin projects={projects} />
-      </div>
+      <motion.div
+        variants={fadeInUp}
+        initial="initial"
+        animate="animate"
+        transition={{ delay: 0.2 }}
+        className="w-full max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex flex-col"
+      >
+        <div className="text-center mb-4 md:mb-6">
+          <motion.h1
+            className="h3 text-accent font-bold mb-2 md:mb-3"
+            variants={fadeInUp}
+            initial="initial"
+            animate="animate"
+            transition={{ delay: 0.3 }}
+          >
+            Projects
+          </motion.h1>
+          <motion.p
+            className="text-sm md:text-base text-gray-600 max-w-2xl mx-auto"
+            variants={fadeInUp}
+            initial="initial"
+            animate="animate"
+            transition={{ delay: 0.4 }}
+          >
+            Here are some of the projects I've worked on during my studies and
+            free time.
+          </motion.p>
+        </div>
+
+        <motion.div
+          variants={fadeInUp}
+          initial="initial"
+          animate="animate"
+          transition={{ delay: 0.5 }}
+          className="w-full flex-grow"
+        >
+          <CarouselPlugin projects={projects} />
+        </motion.div>
+      </motion.div>
     </motion.section>
   );
 };
