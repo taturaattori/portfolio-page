@@ -27,7 +27,7 @@ test("it renders the ProjectCard with correct values", async () => {
     expect(screen.getByText(tech)).toBeInTheDocument();
   });
 
-  const image = screen.getByAltText("project picture");
+  const image = screen.getByAltText(`${mockProps.title} project screenshot`);
   expect(image).toBeInTheDocument();
   expect(image).toHaveAttribute("src", mockProps.image);
 
