@@ -20,6 +20,14 @@ const projects = [
     link: "https://github.com/taturaattori/portfolio-page",
   },
   {
+    title: "Pygame Slots",
+    description:
+      "An ongoing hobby project made with Pygame. It features a slot machine game with basic mechanics and graphics. The project is still in early development, with plans to add more features and improve the overall experience. This project has been a great way for me to learn more about game development and casino game mechanics.",
+    techs: ["Python", "Pygame"],
+    image: "/assets/pygameslots.png",
+    link: "https://github.com/taturaattori/slots",
+  },
+  {
     title: "EfiLibrary",
     description:
       "EfiLibrary is a project between the students of Business Information Technology Degree Programme in Haaga-Helia University of Applied Sciences, and Eficode Oy, a Finnish company specializing in enhancing software development, whose products are related to automation and devops consulting, as well as accessibility and user studies.",
