@@ -14,7 +14,7 @@ import { Button } from "./ui/button";
 import { cn } from "@/lib/utils";
 
 const CarouselPlugin = ({ projects }) => {
-  const plugin = useRef(Autoplay({ delay: 5000, stopOnInteraction: true }));
+  const plugin = useRef(Autoplay({ delay: 5000, stopOnInteraction: false }));
   const [api, setApi] = useState(null);
   const [current, setCurrent] = useState(0);
   const [count, setCount] = useState(0);
@@ -46,6 +46,7 @@ const CarouselPlugin = ({ projects }) => {
         <Carousel
           plugins={[plugin.current]}
           onMouseEnter={plugin.current.stop}
+          onMouseLeave={plugin.current.reset}
           setApi={setApi}
           className="w-full h-full"
         >
